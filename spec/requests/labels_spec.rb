@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe KasesController do
+describe LabelsController do
   before do
     stub_access_token
   end
@@ -19,5 +19,27 @@ describe KasesController do
     end
 
     expect(response.body).to include("Name: Abandoned Chats")
+  end
+
+  describe "Adding a prove it label" do
+    it "displays an error if it can't create the label" do
+      VCR.use_cassette('labels-prove-error') do
+        get "/labels/prove"
+        follow_redirect!
+      end
+
+      expect(response.body).to include("Failed")
+      expect(response.body).to include("taken")
+    end
+
+    it "displays an error if it can't create the label" do
+      VCR.use_cassette('labels-prove-success') do
+        get "/labels/prove"
+        follow_redirect!
+      end
+
+      expect(response.body).to include("Created")
+      expect(response.body).to include("Name: Prove It")
+    end
   end
 end

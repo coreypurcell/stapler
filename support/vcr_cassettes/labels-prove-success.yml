@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://confbots.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: "{\"name\":\"Prove It\",\"description\":\"description of Prove It\",\"types\":[\"case\",\"macro\"],\"color\":\"blue\"}"
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '99'
+      Authorization:
+      - OAuth oauth_body_hash="a49fx%2BZvJgz%2Fl7VGglDclmzKI7E%3D", oauth_consumer_key="ctN2hmdaBEO88RxxQImm",
+        oauth_nonce="laXSaDgiYRHZZKAGx6I64slTnKnvIVxlgHh3DRGlZA", oauth_signature="59CHgQs5cI1APqhSondR8AoyX2Q%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1399302167", oauth_token="b1HF8Xtd03t6z5srRRbw",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:02:47 GMT
+      Etag:
+      - "\"4aca9d88ac2a14c166ec01f2f797e35c\""
+      Location:
+      - https://confbots.desk.com/api/v2/labels/1766397
+      Status:
+      - 201 Created
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Reset:
+      - '13'
+      X-Request-Id:
+      - 94e476e5b96297b373aad408281d5f50
+      Content-Length:
+      - '195'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1766397,\"name\":\"Prove It\",\"description\":\"description
+        of Prove It\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"blue\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1766397\",\"class\":\"label\"}}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:02:47 GMT
+- request:
+    method: get
+    uri: https://confbots.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="ctN2hmdaBEO88RxxQImm", oauth_nonce="vfa4FdmzEz63qRYtdKyvWIvHyJ7ehRFCQYQRPcneM",
+        oauth_signature="yO3PrACpkaNUAQr7bxbb%2FeCqQ8Q%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1399302167", oauth_token="b1HF8Xtd03t6z5srRRbw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:02:48 GMT
+      Etag:
+      - "\"13993021682528860\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '57'
+      X-Rate-Limit-Reset:
+      - '12'
+      X-Request-Id:
+      - 93540de48198dcbd5ea6261ffd114743
+      Content-Length:
+      - '1990'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":9,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1759344,\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759344\",\"class\":\"label\"}}},{\"id\":1759343,\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759343\",\"class\":\"label\"}}},{\"id\":1759340,\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759340\",\"class\":\"label\"}}},{\"id\":1759338,\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759338\",\"class\":\"label\"}}},{\"id\":1759339,\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759339\",\"class\":\"label\"}}},{\"id\":1759342,\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759342\",\"class\":\"label\"}}},{\"id\":1766397,\"name\":\"Prove
+        It\",\"description\":\"description of Prove It\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"blue\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1766397\",\"class\":\"label\"}}},{\"id\":1759341,\"name\":\"Sample
+        Case\",\"description\":\"Sample Case\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759341\",\"class\":\"label\"}}},{\"id\":1759337,\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1759337\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:02:48 GMT
+recorded_with: VCR 2.9.0
