@@ -41,4 +41,10 @@ gem "twitter-bootstrap-rails"
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'pry', group: [:development, :test]
+group :development, :test do
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'webmock'
+  gem 'vcr'
+end
