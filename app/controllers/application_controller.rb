@@ -3,6 +3,14 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_filter :check_auth
+
+  def check_auth
+    unless session[:oauth_token] && session[:oauth_secret]
+      redirect_to root_path, notice: "Please sign in"
+    end
+  end
+
   def access_token
     @access_token ||= OAuth::AccessToken.from_hash(
       consumer,
