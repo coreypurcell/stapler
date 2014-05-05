@@ -1,0 +1,5 @@
+<h2>Case</h2>
+
+<%= debug kase %>
+
+<p>Subject: <%= kase.subject %></p>

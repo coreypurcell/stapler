@@ -1,0 +1,9 @@
+<% @kases.each do |kase| %>
+
+  <h2>Case</h2>
+  <p>Subject: <%= kase.subject %></p>
+  <p>Blurb: <%= kase.blurb %></p>
+  <p>Status: <%= kase.status %></p>
+  <p>Received At: <%= kase.received_at %></p>
+
+<% end %>
