@@ -18,6 +18,16 @@ class ApplicationController < ActionController::Base
     HashWithIndifferentAccess.new(ActiveSupport::JSON.decode(json))
   end
 
+  def post(url, hash)
+    json = ActiveSupport::JSON.encode(hash)
+    access_token.post(url, json)
+  end
+
+  def patch(url, hash)
+    json = ActiveSupport::JSON.encode(hash)
+    access_token.put(url, json)
+  end
+
   private
 
   def current_user

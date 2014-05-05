@@ -16,6 +16,10 @@
     <%= link_to "Sign in with Desk", "/auth/desk" %>
   <% end %>
 </div>
+<div><%= link_to "Menu", root_path %></div>
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
 
 <%= yield %>
 

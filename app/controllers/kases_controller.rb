@@ -4,5 +4,4 @@ class KasesController < ApplicationController
     cases_url = first_filter_url[:_links][:cases][:href]
     @kases = Kase.from_json(get(cases_url))
   end
-
 end
