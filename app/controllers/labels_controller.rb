@@ -1,4 +1,5 @@
 class LabelsController < ApplicationController
+  before_filter :check_auth
 
   def index
     labels_json = get("https://confbots.desk.com/api/v2/labels")

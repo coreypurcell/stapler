@@ -1,4 +1,6 @@
 class KasesController < ApplicationController
+  before_filter :check_auth
+
   def index
     first_filter_url = get("https://confbots.desk.com/api/v2/filters")[:_embedded][:entries].first
     cases_url = first_filter_url[:_links][:cases][:href]
