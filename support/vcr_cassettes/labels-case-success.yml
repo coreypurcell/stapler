@@ -1,0 +1,324 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://confbots.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="ctN2hmdaBEO88RxxQImm", oauth_nonce="uktDNaXDdxK1J17P4CmR8zL1KbiXpcRf7WHtrmip4c",
+        oauth_signature="bTuo1mmB8h7XWaHCA5oRaWUvhQ4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1399302408", oauth_token="b1HF8Xtd03t6z5srRRbw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:06:49 GMT
+      Etag:
+      - "\"1129bced54398c9d7f792b987b19b1aa\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '59'
+      X-Rate-Limit-Reset:
+      - '11'
+      X-Request-Id:
+      - 359649bc63f29a34e015521b8a994677
+      Content-Length:
+      - '2939'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964933\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964933/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964934\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964934/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964935\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964935/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964936\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964936/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964937\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964937/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964938\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964938/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964939\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964939/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964940\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964940/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964941\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964941/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964942\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964942/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:06:49 GMT
+- request:
+    method: get
+    uri: https://confbots.desk.com/api/v2/filters/1964933/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="ctN2hmdaBEO88RxxQImm", oauth_nonce="jFLPclJ4RRuaXtrFUXn0GwM8zPg1CoiX5USEYdQP0",
+        oauth_signature="ilLNQ4piBfQkI3sXD%2FLVznmKARM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1399302409", oauth_token="b1HF8Xtd03t6z5srRRbw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:06:50 GMT
+      Etag:
+      - "\"52ef60bda0ecd6c34a12bd5b1f9e39ac\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Reset:
+      - '10'
+      X-Request-Id:
+      - 152efe01e944c09656ff94ea3c6f98c0
+      Content-Length:
+      - '2026'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":1,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you t\",\"subject\":\"Getting Started with Your
+        New Account\",\"priority\":4,\"locked_until\":null,\"description\":\"\",\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Prove
+        It\",\"Sample Case\"],\"label_ids\":[1759341,1766397],\"language\":\"en\",\"active_at\":\"2014-05-05T12:12:05Z\",\"created_at\":\"2014-04-29T19:43:30Z\",\"updated_at\":\"2014-05-05T12:50:22Z\",\"received_at\":\"2014-04-29T19:43:30Z\",\"first_opened_at\":\"2014-04-29T19:45:06Z\",\"opened_at\":\"2014-04-29T19:45:06Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/187301564\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/21971901\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/409832\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:06:50 GMT
+- request:
+    method: put
+    uri: https://confbots.desk.com/api/v2/cases/1
+    body:
+      encoding: UTF-8
+      string: "{\"labels\":[\"Prove It\"]}"
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '23'
+      Authorization:
+      - OAuth oauth_body_hash="VZnG17vh1XhSAtUfPFTWS92GK1M%3D", oauth_consumer_key="ctN2hmdaBEO88RxxQImm",
+        oauth_nonce="UibdyxeERNcvpDLvNdlwyMjfniqUJon8BFSzebG4B1Q", oauth_signature="5oHzan%2F9L0odL%2B2yWSa6EDQoqOo%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1399302410", oauth_token="b1HF8Xtd03t6z5srRRbw",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:06:50 GMT
+      Etag:
+      - "\"03104177faabd02abf803b5494deed15\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '57'
+      X-Rate-Limit-Reset:
+      - '10'
+      X-Request-Id:
+      - f9fa0b867005e8894f386e0957f7c178
+      Content-Length:
+      - '1685'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"I want to personally thank
+        you for signing up to try Desk.com! To ensure you get the most out of your
+        trial, here are some helpful tips and quick ways to get started:\\n\\n1. USE
+        IT - You\\u2019ve got 14 days to try us out - please do so and tell us what
+        you t\",\"subject\":\"Getting Started with Your New Account\",\"priority\":4,\"locked_until\":null,\"description\":\"\",\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Prove
+        It\",\"Sample Case\"],\"label_ids\":[1759341,1766397],\"language\":\"en\",\"active_at\":\"2014-05-05T12:12:05Z\",\"created_at\":\"2014-04-29T19:43:30Z\",\"updated_at\":\"2014-05-05T12:50:22Z\",\"received_at\":\"2014-04-29T19:43:30Z\",\"first_opened_at\":\"2014-04-29T19:45:06Z\",\"opened_at\":\"2014-04-29T19:45:06Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/187301564\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/21971901\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/409832\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:06:50 GMT
+- request:
+    method: get
+    uri: https://confbots.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="ctN2hmdaBEO88RxxQImm", oauth_nonce="PItmhcSTSLCROmlGfGEo0SBRpMVAPYvakOhuwpUBQk",
+        oauth_signature="z%2BMLo540e63E0a6GPK5ueVlDWww%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1399302410", oauth_token="b1HF8Xtd03t6z5srRRbw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:06:51 GMT
+      Etag:
+      - "\"1129bced54398c9d7f792b987b19b1aa\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '56'
+      X-Rate-Limit-Reset:
+      - '9'
+      X-Request-Id:
+      - e4e817added8f642a564b20cd0ffcd48
+      Content-Length:
+      - '2939'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964933\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964933/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964934\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964934/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964935\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964935/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964936\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964936/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964937\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964937/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964938\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964938/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964939\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964939/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964940\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964940/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964941\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964941/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964942\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1964942/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:06:51 GMT
+- request:
+    method: get
+    uri: https://confbots.desk.com/api/v2/filters/1964933/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="ctN2hmdaBEO88RxxQImm", oauth_nonce="BWJRqQCYD5N1W3mlZkReSnxQh75uViK0MQJKc5GfEk",
+        oauth_signature="lAm%2FTg0K01G8qKblXkvizLcCK78%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1399302411", oauth_token="b1HF8Xtd03t6z5srRRbw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 05 May 2014 15:06:51 GMT
+      Etag:
+      - "\"52ef60bda0ecd6c34a12bd5b1f9e39ac\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '55'
+      X-Rate-Limit-Reset:
+      - '9'
+      X-Request-Id:
+      - f76534d709d5f4714f3c8b9792a5daaf
+      Content-Length:
+      - '2026'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":1,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/1964933/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you t\",\"subject\":\"Getting Started with Your
+        New Account\",\"priority\":4,\"locked_until\":null,\"description\":\"\",\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Prove
+        It\",\"Sample Case\"],\"label_ids\":[1759341,1766397],\"language\":\"en\",\"active_at\":\"2014-05-05T12:12:05Z\",\"created_at\":\"2014-04-29T19:43:30Z\",\"updated_at\":\"2014-05-05T12:50:22Z\",\"received_at\":\"2014-04-29T19:43:30Z\",\"first_opened_at\":\"2014-04-29T19:45:06Z\",\"opened_at\":\"2014-04-29T19:45:06Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/187301564\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/21971901\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/409832\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: 
+  recorded_at: Mon, 05 May 2014 15:06:51 GMT
+recorded_with: VCR 2.9.0

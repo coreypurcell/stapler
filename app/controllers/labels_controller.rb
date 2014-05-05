@@ -33,7 +33,7 @@ class LabelsController < ApplicationController
     }
     resp = patch(@kases.first.href, hash)
     if resp.code =~ /^2/
-      flash[:notice] = "Addes prove it label"
+      flash[:notice] = "Added prove it label"
       redirect_to kases_path
     else
       flash[:error] = "Failed to add prove it label: #{resp.body}"
