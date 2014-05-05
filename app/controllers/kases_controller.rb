@@ -5,8 +5,4 @@ class KasesController < ApplicationController
     @kases = Kase.from_json(get(cases_url))
   end
 
-  def get(url)
-    json = access_token.get(url).body
-    HashWithIndifferentAccess.new(ActiveSupport::JSON.decode(json))
-  end
 end

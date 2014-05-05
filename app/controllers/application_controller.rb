@@ -13,6 +13,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def get(url)
+    json = access_token.get(url).body
+    HashWithIndifferentAccess.new(ActiveSupport::JSON.decode(json))
+  end
+
   private
 
   def current_user

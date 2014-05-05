@@ -1,0 +1,9 @@
+<h2>Labels</h2>
+
+<% @labels.each do |label| %>
+  <p>
+    Name: <%= label.name %><br />
+    Description: <%= label.description %><br />
+    Types: <%= label.types.join(", ") %><br />
+  </p>
+<% end %>
