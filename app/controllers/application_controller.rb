@@ -37,8 +37,8 @@ class ApplicationController < ActionController::Base
 
   def consumer
     OAuth::Consumer.new(
-      "ctN2hmdaBEO88RxxQImm",
-      "PSlpfGqLvqkpzhqMaIhHmm73EyVAD9gzzCD3dr4l",
+      ENV['DESK_KEY'],
+      ENV['DESK_SECRET'],
       :site => "https://confbots.desk.com",
       :scheme => :header
     )

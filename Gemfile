@@ -15,7 +15,8 @@ gem 'therubyracer',  platforms: :ruby
 #
 gem 'omniauth'
 gem 'omniauth-desk'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
